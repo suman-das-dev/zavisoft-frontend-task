@@ -1,12 +1,20 @@
 
 import './App.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
    <>
+
    <div>
-    <h1 className='text-2xl'>bxdyfvcdubj</h1>
+<div className="max-w-[1320px] mx-auto">
+<Navbar />
+
+<Footer />
+</div>
+
    </div>
    </>
   )

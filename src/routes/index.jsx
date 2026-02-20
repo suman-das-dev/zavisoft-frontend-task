@@ -5,6 +5,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    outlet: [
+        {
+            
+        }
+    ]
   },
 ]);
 export default router
