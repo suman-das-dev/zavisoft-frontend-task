@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Banner from './components/Banner'
+import HeroSection from './components/HeroSection'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
 <div className="max-w-[1320px] mx-auto ">
 <Navbar />
 <Banner />
+<HeroSection />
 <Footer />
 </div>
 
