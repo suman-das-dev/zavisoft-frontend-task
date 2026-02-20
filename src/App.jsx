@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Banner from './components/Banner'
 import HeroSection from './components/HeroSection'
+import Products from './components/Products/Products'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 <Navbar />
 <Banner />
 <HeroSection />
+<Products />
 <Footer />
 </div>
 

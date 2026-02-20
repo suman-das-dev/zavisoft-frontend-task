@@ -10,7 +10,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="w-full p-4">
+    <section className="w-full mb-10 mt-10">
       {/* Main Container with Rounded Corners */}
       <div className="relative w-full h-[750px] rounded-[40px] overflow-hidden">
         
