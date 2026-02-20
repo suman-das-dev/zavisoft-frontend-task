@@ -9,10 +9,9 @@ const links = [
 
 const Navbar = () => {
     return (
-        <nav className="w-full px-6 py-4"> 
-            <div className="bg-white rounded-[24px] px-8 py-4 flex justify-between items-center shadow-sm border border-gray-100 max-w-7xl mx-auto">
+        <nav className="w-full  py-4"> 
+            <div className="bg-white rounded-[24px] px-8 py-4 flex justify-between items-center shadow-sm border border-gray-100  mx-auto">
                 
-                {/* ১. বাম পাশের মেনু */}
                 <div className="flex items-center gap-8">
                     {links.map((link, index) => (
                         <Link 
