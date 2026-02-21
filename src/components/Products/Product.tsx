@@ -1,8 +1,13 @@
 import { Link } from "react-router";
+import { Loader } from "../Loader";
 
-const Product = ({ data }) => { 
+const Product = ({ data,isLoading }) => { 
   const { images, title, price } = data;
-
+  if(isLoading){
+    return(
+      <Loader/>
+    )
+  }
   return (
     <div className="group cursor-pointer bg-[#FAFAFA] rounded-[16px] md:rounded-[32px] p-1.5 md:p-2 flex flex-col h-full border border-transparent hover:border-[#4B6BFB] transition-all duration-300">
       

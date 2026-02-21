@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Loader } from "@/components/Loader";
 import { useGetProductQuery } from "@/store/apis/ProductsApi";
 import { Heart } from "lucide-react"; 
+import Products from "./Products";
 
 const ProductPage = () => {
   const { productId } = useParams();
@@ -10,7 +11,7 @@ const ProductPage = () => {
   
   const [activeImg, setActiveImg] = useState(0);
 
-  if (isLoading) return <div className="min-h-screen flex items-center justify-center"><Loader variant="fullscreen" /></div>;
+  if (isLoading) return <div className=" flex items-center justify-center"><Loader variant="fullscreen" /></div>;
   if (!product) return <div className="text-center py-20 font-bold text-2xl">Product not found</div>;
 
   // API Data 
@@ -20,7 +21,8 @@ const ProductPage = () => {
   const description = product?.description || "";
 
   return (
-    <div className="max-w-[1440px] mx-auto py-10 md:px-0 px-4 font-sans">
+   <div>
+     <div className="max-w-[1440px] mx-auto py-10 md:px-0 px-4 font-sans">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-10">
 
         {/* ================= LEFT: IMAGES SECTION ================= */}
@@ -134,7 +136,7 @@ const ProductPage = () => {
               <Heart size={24} className="cursor-pointer" />
             </button>
           </div>
-          <button className="w-full bg-[#4B6BFB] text-white py-4 rounded-xl font-medium text-sm  uppercase tracking-wider hover:bg-blue-700 transition-colors shadow-md mb-2 md:mb-4">
+          <button className="w-full bg-[#4B6BFB] text-white py-4 cursor-pointer rounded-xl font-medium text-sm  uppercase tracking-wider hover:bg-blue-700 transition-colors shadow-md mb-2 md:mb-4">
             BUY IT NOW
           </button>
 
@@ -163,6 +165,8 @@ const ProductPage = () => {
         </div>
       </div>
     </div>
+    <Products/>
+   </div>
   );
 }
 

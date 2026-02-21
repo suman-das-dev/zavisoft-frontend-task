@@ -21,7 +21,7 @@ export const Loader = ({
 }: LoaderProps) => {
 
     const containerClasses = variant === 'fullscreen' 
-        ? `flex min-h-screen items-center justify-center bg-gray-50 ${className}` 
+        ? `flex min-h-screen items-center justify-center  ${className}` 
         : `flex items-center justify-center ${className}`;
 
     const spinnerClasses = `animate-spin rounded-full border-b-2 border-blue-600 ${sizeMap[size]} ${loaderClassName}`;
