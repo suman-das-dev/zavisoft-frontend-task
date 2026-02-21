@@ -43,7 +43,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-10 px-4 md:px-0">
+    <footer className="mt-10 mb-3 px-4 md:px-0">
       <div className="max-w-[1400px] mx-auto">
         
         {/* ================= TOP BLUE SECTION ================= */}
