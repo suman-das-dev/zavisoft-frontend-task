@@ -5,10 +5,11 @@ import { useGetProductQuery } from "@/store/apis/ProductsApi";
 import { Heart } from "lucide-react"; 
 import Products from "./Products";
 import toast from "react-hot-toast";
-
+import { useDispatch } from "react-redux";
+import { addToCart } from '@/store/slices/CartSlice';
 const ProductPage = () => {
   const { productId } = useParams();
-  
+const dispatch = useDispatch();
   const { data: product, isLoading, error } = useGetProductQuery(productId);
   
   const [activeImg, setActiveImg] = useState(0);
@@ -23,8 +24,9 @@ const ProductPage = () => {
   const description = product?.description || "";
 
 const handleAddToCart = () => {
-toast.success("Product added to cart", {
 
+    dispatch(addToCart(product))
+toast.success("Product added to cart", {
 
       position: "bottom-right", 
    });

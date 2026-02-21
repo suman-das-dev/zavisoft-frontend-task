@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FlameIcon, Search, User, ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 
 const links = [
     { name: "New Drops", icon: FlameIcon, link: '/new-drops' },
@@ -10,7 +12,9 @@ const links = [
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    const cartItems = useSelector((state: RootState) => state.cart.cartItems || []);
+    
+    const cartItemCount = cartItems.reduce((sum, item) => sum + (item.cartQuantity || 1), 0);
     return (
         <nav className="w-full py-4 px-4 md:px-0 relative"> 
             <div className="bg-white rounded-[24px] px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm border border-gray-100 mx-auto">
@@ -57,7 +61,7 @@ const Navbar = () => {
                         to={'/cart'} 
                         className="bg-[#FFA52F] w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full text-[10px] md:text-xs font-bold shadow-md hover:bg-orange-400 transition-colors"
                     >
-                        0
+                        {cartItemCount}
                     </Link>
                 </div>
             </div>
