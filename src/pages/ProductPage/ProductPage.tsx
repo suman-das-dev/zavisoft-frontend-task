@@ -4,9 +4,11 @@ import { Loader } from "@/components/Loader";
 import { useGetProductQuery } from "@/store/apis/ProductsApi";
 import { Heart } from "lucide-react"; 
 import Products from "./Products";
+import toast from "react-hot-toast";
 
 const ProductPage = () => {
   const { productId } = useParams();
+  
   const { data: product, isLoading, error } = useGetProductQuery(productId);
   
   const [activeImg, setActiveImg] = useState(0);
@@ -19,6 +21,14 @@ const ProductPage = () => {
   const title = product?.title || "Product Title";
   const price = product?.price ? `$${product.price}.00` : "$0.00";
   const description = product?.description || "";
+
+const handleAddToCart = () => {
+toast.success("Product added to cart", {
+
+
+      position: "bottom-right", 
+   });
+};
 
   return (
    <div>
@@ -112,7 +122,7 @@ const ProductPage = () => {
               <h3 className="text-sm font-bold uppercase text-[#232321]">Size</h3>
               <button className="text-xs font-bold underline text-gray-500 hover:text-black">SIZE CHART</button>
             </div>
-            <div className="flex flex-wrap gap-2 md:gap-3">
+            <div className="grid md:grid-cols-8 grid-cols-6 gap-2 md:gap-3">
               {['38', '39', '40', '41', '42', '43', '44', '45', '46', '47'].map((size, i) => {
                 let btnStyle = "bg-white text-[#232321] shadow-sm border border-gray-100 hover:border-black"; // Default
                 if (i === 0) btnStyle = "bg-[#232321] text-white shadow-md"; // Active (38)
@@ -129,14 +139,14 @@ const ProductPage = () => {
 
           {/* Buttons */}
           <div className="flex gap-3 md:gap-4 mb-2 md:mb-4">
-            <button className="flex-1 cursor-pointer bg-[#232321] text-white py-4 rounded-xl font-medium text-sm  uppercase tracking-wider hover:bg-black transition-colors shadow-md">
+            <button onClick={handleAddToCart} className="flex-1 cursor-pointer bg-[#232321] text-white py-4 rounded-xl font-medium text-sm  uppercase tracking-wider hover:bg-black transition-colors shadow-md">
               ADD TO CART
             </button>
             <button className="w-14 h-14 bg-[#232321] cursor-pointer text-white rounded-xl flex items-center justify-center hover:bg-black transition-colors shadow-md shrink-0">
               <Heart size={24} className="cursor-pointer" />
             </button>
           </div>
-          <button className="w-full bg-[#4B6BFB] text-white py-4 cursor-pointer rounded-xl font-medium text-sm  uppercase tracking-wider hover:bg-blue-700 transition-colors shadow-md mb-2 md:mb-4">
+          <button onClick={handleAddToCart} className="w-full bg-[#4B6BFB] text-white py-4 cursor-pointer rounded-xl font-medium text-sm  uppercase tracking-wider hover:bg-blue-700 transition-colors shadow-md mb-2 md:mb-4">
             BUY IT NOW
           </button>
 
