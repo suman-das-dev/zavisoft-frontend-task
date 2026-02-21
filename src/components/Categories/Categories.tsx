@@ -22,38 +22,41 @@ const Categories = () => {
   if (isLoading) return <p>Loading...</p>;
 
   return (
-    <div className="  max-w-[1440px] mx-auto bg-black">
-      <div className="flex justify-between items-end mb-0 px-10 py-20">
-        <h1 className="uppercase text-7xl font-black tracking-tighter text-white">
-          Categories
-        </h1>
+    <div className="w-full bg-[#232321] pb-10 md:pb-0"> 
+      <div className="max-w-[1440px] mx-auto">
         
-        <div className="flex gap-2">
-          <button 
-            onClick={handlePrev}
-            disabled={startIndex === 0}
-            className={`px-1 py-1 rounded-xl border-1 ${startIndex === 0 ? 'text-gray-300 border-gray-100' : 'text-black border-white hover:bg-white hover:text-black'} transition-all`}
-          >
-            <ChevronLeft className="text-white hover:bg-black" size={20} />
-          </button>
-          <button 
-            onClick={handleNext}
-            disabled={!data || startIndex + 2 >= data.length}
-            className={`px-1 py-1 rounded-xl border-1 ${(!data || startIndex + 2 >= data.length) ? 'text-gray-300 border-gray-100' : 'text-black border-white hover:bg-white hover:text-black'} transition-all`}
-          >
-            <ChevronRight className="text-white hover:bg-black" size={20} />
-          </button>
+        <div className="flex justify-between items-center px-4 py-8 md:px-10 md:py-20">
+          <h1 className="uppercase text-[28px] md:text-7xl font-black tracking-tighter text-white">
+            Categories
+          </h1>
+          
+          <div className="flex gap-2">
+            <button 
+              onClick={handlePrev}
+              disabled={startIndex === 0}
+              className={`p-2 rounded-md border ${startIndex === 0 ? 'text-gray-500 border-gray-500' : 'text-black border-white bg-white hover:bg-gray-200'} transition-all`}
+            >
+              <ChevronLeft size={16} className={startIndex === 0 ? 'text-gray-500' : 'text-[#232321]'} />
+            </button>
+            <button 
+              onClick={handleNext}
+              disabled={!data || startIndex + 2 >= data.length}
+              className={`p-2 rounded-md border ${(!data || startIndex + 2 >= data.length) ? 'text-gray-500 border-gray-500' : 'text-black border-white bg-white hover:bg-gray-200'} transition-all`}
+            >
+              <ChevronRight size={16} className={(!data || startIndex + 2 >= data.length) ? 'text-gray-500' : 'text-[#232321]'} />
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 pl-24 ">
-        {data?.slice(startIndex, startIndex + 2).map((category, idx) => (
-          <Category 
-            key={category?.id} 
-            data={category} 
-            className={idx === 0 ? 'rounded-tl-4xl' : ''}
-          />
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2  md:pl-14 pl-8 ">
+  {data?.slice(startIndex, startIndex + 2).map((category, idx) => (
+    <Category 
+      key={category?.id} 
+      data={category} 
+        className={idx === 0 ? 'rounded-tl-4xl md:rounded-tl-[48px]' : ''}
+    />
+  ))}
+</div>
       </div>
     </div>
   );
