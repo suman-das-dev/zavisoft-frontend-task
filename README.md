@@ -1,3 +1,72 @@
+
+## KICKS E-Commerce Frontend
+
+### Overview
+KICKS is a modern e-commerce frontend project featuring new drops, categories, products, reviews, and a beautiful user experience. The UI is responsive, fast, and user-friendly.
+
+### Setup
+To run the project, follow these steps:
+
+1. Clone the repository:
+	```bash
+	git clone <repo-url>
+	```
+2. Navigate to the directory:
+	```bash
+	cd zavisoft-frontend-task
+	```
+3. Install dependencies:
+	```bash
+	npm install
+	```
+4. Start the development server:
+	```bash
+	npm run dev
+	```
+
+### Tech Stack
+- React 19
+- Vite
+- Tailwind CSS
+- Redux Toolkit (RTK Query)
+- React Router
+- Lucide React Icons
+- ESLint
+- React Hot Toast
+
+
+
+### Live URL
+[Live Demo](https://your-live-url.com)
+
+### Notes
+- Responsive UI (Mobile, Tablet, Desktop)
+- Fast loading with Vite
+- State management with Redux Toolkit
+- API handling with RTK Query
+- Rapid and customizable design with Tailwind CSS
+- Clean code structure
+- Easily extendable
+
+Special Features:
+- Category wise filtering
+- Product details modal
+- Cart management
+- User authentication (future scope)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
