@@ -7,7 +7,7 @@ const Products = () => {
   console.log(data)
 
   return (
- <div>
+ <div className="mb-20">
        <div className="flex justify-between mb-10">
       <h1 className="font-semibold text-[#232321] text-7xl">
         DON'T MISS OUT <br /> NEW DROPS
