@@ -1,4 +1,3 @@
-
 ## KICKS E-Commerce Frontend
 
 ### Overview

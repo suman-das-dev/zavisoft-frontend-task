@@ -3,22 +3,22 @@ const reviews = [
     name: 'Good Quality',
     text: 'I highly recommend shopping from kicks',
     rating: 5.0,
-    img: '/src/assets/reviews/img-1.png',
-    avatar: '/src/assets/reviews/avatar1.png',
+    img: '/assets/reviews/img-1.png',
+    avatar: '/assets/reviews/avatar1.png',
   },
   {
     name: 'Good Quality',
     text: 'I highly recommend shopping from kicks',
     rating: 5.0,
-    img: '/src/assets/reviews/img-2.png',
-    avatar: '/src/assets/reviews/avatar2.png',
+    img: '/assets/reviews/img-2.png',
+    avatar: '/assets/reviews/avatar2.png',
   },
   {
     name: 'Good Quality',
     text: 'I highly recommend shopping from kicks',
     rating: 5.0,
-      img: '/src/assets/reviews/img-3.png',
-    avatar: '/src/assets/reviews/avatar3.png',
+    img: '/assets/reviews/img-3.png',
+    avatar: '/assets/reviews/avatar3.png',
   },
 ];
 

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const HeroSection = () => {
-  const [mainImage, setMainImage] = useState("/src/assets/Hero-Section-img-3.jpg");
+  const [mainImage, setMainImage] = useState("/assets/Hero-Section-img-3.jpg");
 
   const thumbnails = [
-    { id: 1, src: "/src/assets/Hero-Section-img-2.jpg" },
-    { id: 2, src: "/src/assets/Hero-Section-img-1.jpg" },
+    { id: 1, src: "/assets/Hero-Section-img-2.jpg" },
+    { id: 2, src: "/assets/Hero-Section-img-1.jpg" },
   ];
 
   return (
