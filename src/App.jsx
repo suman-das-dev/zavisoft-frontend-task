@@ -6,6 +6,7 @@ import Banner from './components/Banner'
 import HeroSection from './components/HeroSection'
 import Products from './components/Products/Products'
 import Categories from './components/Categories/Categories'
+import Reviews from './components/Reviews/Reviews'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 <HeroSection />
 <Products />
 <Categories/>
+<Reviews />
 <Footer />
 </div>
 
