@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const HeroSection = () => {
-  const [mainImage, setMainImage] = useState("/assets/Hero-Section-img-3.jpg");
+  const [mainImage, setMainImage] = useState("https://i.ibb.co.com/kVc05ktc/Hero-Section-img-3.jpg");
 
   const thumbnails = [
-    { id: 1, src: "/assets/Hero-Section-img-2.jpg" },
-    { id: 2, src: "/assets/Hero-Section-img-1.jpg" },
+    { id: 1, src: "https://i.ibb.co.com/HDVF3jbF/Hero-Section-img-2.jpg" },
+    { id: 2, src: "https://i.ibb.co.com/nM7G3w4N/Hero-Section-img-1.jpg" },
   ];
 
   return (
@@ -25,7 +25,7 @@ const HeroSection = () => {
 
         {/* Bottom Content Area */}
         <div className="absolute bottom-6 md:bottom-10 left-5 md:left-12 max-w-[220px] md:max-w-lg z-10">
-          <div className="inline-block md:border-2 border-yellow-400 md:p-1 mb-2 md:mb-4">
+          <div className="inline-block  md:p-1 mb-2 md:mb-4">
              {/* Text Size Adjusted for Mobile */}
              <h2 className="text-3xl md:text-5xl lg:text-7xl font-black text-white uppercase leading-none drop-shadow-md">
                 Nike Air Max

@@ -72,7 +72,7 @@ const Footer = () => {
           
           <div className="flex-shrink-0 relative w-full md:w-auto flex justify-start md:justify-end mt-4 md:mt-0">
             <img 
-              src="/assets/footer1.png" 
+              src="https://i.ibb.co.com/Cp6y5jr9/footer1.png" 
               alt="KICKS Logo" 
               className="h-[40px] md:h-[100px] object-contain" 
             />
@@ -144,7 +144,7 @@ const Footer = () => {
           {/* Giant Bottom Logo Image Container */}
           <div className="mt-12 md:mt-20 w-full flex justify-center translate-y-[84%] md:translate-y-[26%] pointer-events-none z-10">
             <img 
-              src="/assets/footer.png" 
+              src="https://i.ibb.co.com/MxkxzXyP/footer.png" 
               alt="Giant KICKS Background" 
               className="w-full max-w-[1200px] object-cover" 
             />

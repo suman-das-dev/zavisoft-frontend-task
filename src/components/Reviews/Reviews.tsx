@@ -3,22 +3,22 @@ const reviews = [
     name: 'Good Quality',
     text: 'I highly recommend shopping from kicks',
     rating: 5.0,
-    img: '/assets/reviews/img-1.png',
-    avatar: '/assets/reviews/avatar1.png',
+    img: 'https://i.ibb.co.com/zhgrXKzh/img-1.png',
+    avatar: 'https://i.ibb.co.com/4wbtPGhw/avatar1.png',
   },
   {
     name: 'Good Quality',
     text: 'I highly recommend shopping from kicks',
     rating: 5.0,
-    img: '/assets/reviews/img-2.png',
-    avatar: '/assets/reviews/avatar2.png',
+    img: 'https://i.ibb.co.com/HL5xWsLr/img-2.png',
+    avatar: 'https://i.ibb.co.com/Vc8CjZLX/avatar2.png',
   },
   {
     name: 'Good Quality',
     text: 'I highly recommend shopping from kicks',
     rating: 5.0,
-    img: '/assets/reviews/img-3.png',
-    avatar: '/assets/reviews/avatar3.png',
+    img: 'https://i.ibb.co.com/HfvFKLp6/img-3.png',
+    avatar: 'https://i.ibb.co.com/Rk5Npy5n/avatar3.png',
   },
 ];
 

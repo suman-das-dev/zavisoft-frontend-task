@@ -45,7 +45,7 @@ const Navbar = () => {
 
                 <div className="flex-shrink-0">
                     <Link to={'/'}> 
-                        <img src="/assets/Group.png" alt="Logo" className="h-6 md:h-8 w-auto object-contain" /> 
+                        <img src="https://i.ibb.co.com/Rrp9nwN/Group.png" alt="Logo" className="h-6 md:h-8 w-auto object-contain" /> 
                     </Link>
                 </div>
 
@@ -77,7 +77,7 @@ const Navbar = () => {
                 className={`fixed top-0 left-0 h-full w-[75%] max-w-[300px] bg-white z-50 transform transition-transform duration-300 ease-in-out md:hidden flex flex-col p-6 shadow-2xl ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
             >
                 <div className="flex justify-between items-center mb-10">
-                    <img src="/assets/Group.png" alt="Logo" className="h-6 w-auto object-contain" />
+                    <img src="https://i.ibb.co.com/Rrp9nwN/Group.png" alt="Logo" className="h-6 w-auto object-contain" />
                     <button onClick={() => setIsMenuOpen(false)} className="hover:rotate-90 transition-transform">
                         <X size={28} className="text-[#232321]" />
                     </button>

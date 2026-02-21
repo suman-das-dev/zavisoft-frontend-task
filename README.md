@@ -36,7 +36,11 @@ To run the project, follow these steps:
 
 
 ### Live URL
-[Live Demo](https://your-live-url.com)
+Live Demo:  https://zavisofts-e-commerce.netlify.app
+
+### Git Hub Link
+
+Git Link: https://github.com/suman-das-dev/zavisoft-frontend-task
 
 ### Notes
 - Responsive UI (Mobile, Tablet, Desktop)
