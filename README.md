@@ -8,7 +8,7 @@ To run the project, follow these steps:
 
 1. Clone the repository:
 	```bash
-	git clone <repo-url>
+	git clone https://github.com/suman-das-dev/zavisoft-frontend-task
 	```
 2. Navigate to the directory:
 	```bash
