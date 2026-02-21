@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Product = ({ data }) => { 
   const { images, title, price } = data;
 
@@ -23,13 +25,15 @@ const Product = ({ data }) => {
         </h2>
 
         <div className="mt-auto pb-1 md:pb-2">
+         <Link to={`/product/${data.id}`}>
           <button
-            className="w-full justify-center bg-[#232321] py-2 px-1 md:px-4 rounded-md md:rounded-lg text-white flex items-center gap-1 md:gap-2 hover:bg-[#4B6BFB] transition-colors"
+            className="w-full justify-center cursor-pointer bg-[#232321] py-2 px-1 md:px-4 rounded-md md:rounded-lg text-white flex items-center gap-1 md:gap-2 hover:bg-[#4B6BFB] transition-colors"
           >
             <span className="text-[10px] md:text-sm font-bold uppercase tracking-tight">View Product</span>
             <span className="text-[#FFA52F] text-[10px] md:text-sm font-bold">—</span>
             <span className="text-[#FFA52F] text-[10px] md:text-sm font-bold">${price}</span>
           </button>
+         </Link>
         </div>
         
       </div>

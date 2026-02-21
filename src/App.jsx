@@ -1,32 +1,18 @@
-
-import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Banner from './components/Banner'
-import HeroSection from './components/HeroSection'
-import Products from './components/Products/Products'
-import Categories from './components/Categories/Categories'
-import Reviews from './components/Reviews/Reviews'
+import { Outlet } from 'react-router-dom'; 
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
-
   return (
-   <>
-
-   <div>
-<div className="max-w-[1320px] mx-auto ">
-<Navbar />
-<Banner />
-<HeroSection />
-<Products />
-<Categories/>
-<Reviews />
-<Footer />
-</div>
-
-   </div>
-   </>
+    <>
+      <div className="max-w-[1320px] mx-auto">
+        <Navbar />
+        
+        <Outlet /> 
+        <Footer />
+      </div>
+    </>
   )
 }
 
-export default App
+export default App;
